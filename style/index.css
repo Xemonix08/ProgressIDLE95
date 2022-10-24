@@ -110,23 +110,6 @@ main {
 }
 
 @font-face {
-    font-family: Roboto;
-    src: url(../assets/fonts/roboto-regular.ttf);
-}
-
-@font-face {
-    font-family: Roboto;
-    src: url(../assets/fonts/roboto-bold.ttf);
-    font-weight: bold;
-}
-
-@font-face {
-    font-family: Roboto;
-    src: url(../assets/fonts/roboto-black.ttf);
-    font-weight: 900;
-}
-
-@font-face {
     font-family: ProgressPixel;
     src: url(../assets/fonts/progresspixel.ttf);
 }
