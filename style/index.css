@@ -3,3 +3,136 @@
     margin: 0;
     padding: 0;
 }
+
+html {
+    font-size: 20px;
+}
+
+body {
+    background: #131313;
+    font-family: ProgressPixel;
+    font-size: 1rem;
+}
+
+button {
+    appearance: none;
+    outline: none;
+    background: #bcbcbc;
+    border: 2px outset;
+    cursor: pointer;
+    font-family: ProgressPixel;
+    padding: 0.5rem;
+    width: fit-content;
+    height: max-content;
+}
+
+button:focus {
+    outline: 3px solid black;
+}
+
+button:focus > span {
+    outline: 2px dotted black;
+}
+
+button:active {
+    border-style: inset;
+}
+
+main {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.window {
+    background: #b6b6b6;
+    border: 2px outset;
+}
+
+.window-header {
+    background: #00007b;
+    color: white;
+    padding: 0.2rem;
+}
+
+#currency-window {
+    margin: 2rem 0;
+    width: fit-content;
+}
+
+#currency-container {
+    text-align: center;
+    padding: 2rem;
+}
+
+#currency-gain-c {
+    font-size: 75%;
+}
+
+#currency-amount, #currency-gain {
+    font-size: 120%;
+}
+
+#idle-network-list {
+    list-style-type: none;
+}
+
+#idle-network-window {
+    width: 80vw;
+}
+
+.idle-network-system-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 2fr;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.idle-network-system-stats-container {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.idle-network-system-level-container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 5rem;
+}
+
+.idle-network-system-badge-container {
+    margin: 0 1rem;
+}
+
+.idle-network-system-buy-one-btn {
+    width: unset;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../assets/fonts/roboto-regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../assets/fonts/roboto-bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../assets/fonts/roboto-black.ttf);
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: ProgressPixel;
+    src: url(../assets/fonts/progresspixel.ttf);
+}
+
+@font-face {
+    font-family: ProgressPixel;
+    src: url(../assets/fonts/progresspixel-bold.ttf);
+    font-weight: bold;
+}

@@ -16,5 +16,42 @@
     <script src="js/game.js"></script>
 </head>
 <body>
+    <main>
+
+        <div class="window" id="currency-window">
+            <div class="window-header"><span>Progress</span></div>
+            <div id="currency-container">
+                <div id="currency-amount-c">You have <span id="currency-amount"><b>0.01%</b></span> of progress.</div>
+                <div id="currency-gain-c">You are getting <span id="currency-gain"><b>0%/s</b></span></div>
+            </div>
+        </div>
+        <div class="window" id="idle-network-window">
+            <div class="window-header"><span>IDLE Network</span></div>
+            <div id="idle-network">
+                <ul id="idle-network-list">
+                    <li class="idle-network-system">
+                        <div class="idle-network-system-container">
+                            <div class="idle-network-system-name">
+                                Progressbar95
+                            </div>
+                            <div class="idle-network-system-stats-container">
+                                <div class="idle-network-system-level-container">
+                                    <img src="./assets/images/pc_95plus.png" alt="PB95">
+                                    <div class="idle-network-system-level" id="pb95pc-level">0</div>
+                                </div>
+                                <div class="idle-network-system-badge-container" id="pb95pc-badge-container">
+                                    <div class="idle-network-system-no-badge" id="pb95pc-no-badge">N/A</div>
+                                </div>
+                            </div>
+                            <div class="idle-network-system-progress-gain-container" id="pb95pc-progress-gain-c">+<span id="pb95pc-progress-gain">0%/s</span></div>
+                            <button class="idle-network-system-buy-one-btn" id="pb95pc-buy-one">
+                                <span>Get 1 level (Cost: <span id="pb95pc-buy-one-cost">0.01%</span>)</span>
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
