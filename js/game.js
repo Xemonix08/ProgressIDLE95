@@ -8,7 +8,7 @@ let player
 if (localStorage?.getItem("player")) {
   player = JSON.parse(localStorage.getItem("player"))
 
-  Object.entries(player).forEach(e => {
+  Object.keys(player).forEach(e => {
     player[e] = new Decimal(player[e])
   })
 }
@@ -90,6 +90,6 @@ window.addEventListener('DOMContentLoaded', () => {
   gameLoop.start();
 });
 
-window.onclose = () => {
+window.addEventListener("unload", () => {
   localStorage?.setItem("player", JSON.stringify(player))
-}
+})
