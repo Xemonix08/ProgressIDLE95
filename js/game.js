@@ -85,6 +85,6 @@ window.addEventListener('DOMContentLoaded', () => {
   gameLoop.start();
 });
 
-window.onclose(() => {
+window.onclose = () => {
   localStorage?.setItem("player", JSON.stringify(player))
-})
+}
