@@ -7,7 +7,12 @@ let player
 
 if (localStorage?.getItem("player")) {
   player = JSON.parse(localStorage.getItem("player"))
+
+  Object.entries(player).forEach(e => {
+    player[e] = new Decimal(player[e])
+  })
 }
+
 else if (!localStorage?.getItem("player")) {
   player = {
     progress: new Decimal(.01),
